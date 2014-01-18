@@ -2,10 +2,6 @@ console.debug("Load");
 var app = angular.module('app', [ 'ngRoute' ]);
 console.debug("Load1");
 
-app.controller('homeController', function($scope) {
-	console.debug("HomeController");
-});
-console.debug("Load2");
 app.config(function($routeProvider) {
 	$routeProvider.when('/', {
 		controller : 'homeController',
@@ -19,4 +15,9 @@ app.config(function($routeProvider) {
 	}).otherwise({
 		redirectTo : '/'
 	});
+});
+
+console.debug("Load2");
+app.controller('homeController', function($scope) {
+	console.debug("HomeController");
 });
