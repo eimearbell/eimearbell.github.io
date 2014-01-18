@@ -9,7 +9,7 @@ console.debug("Load2");
 app.config(function($routeProvider) {
 	$routeProvider.when('/', {
 		controller : 'homeController',
-		templateUrl : 'templates/home.html'
+		templateUrl : 'html/home.html'
 	}).when('/profile', {
 		controller : 'homeController',
 		templateUrl : 'html/profile.html'
