@@ -1,4 +1,6 @@
 /**
  * 
  */
-alert("Alert!!!");
+$(document).ready(function() {
+
+});

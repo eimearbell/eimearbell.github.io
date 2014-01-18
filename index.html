@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
 <meta charset="ISO-8859-1">
 <title>Eimear Bell</title>
+<link href="css/thirdparty/bootstrap.min.css" rel="stylesheet">
+<link href="css/thirdparty/bootstrap-theme.min.css" rel="stylesheet">
 
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.min.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+	
+</script>
+<script type="text/javascript" src="js/app.js"></script>
+
 </head>
 <body>
-	<h1>Eimear Bell</h1>
-	<h4>Hello World!</h4>
+	<div>
+		<div data-ng-view=""></div>
+	</div>
 </body>
 </html>
