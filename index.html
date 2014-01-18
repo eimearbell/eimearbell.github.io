@@ -5,6 +5,7 @@
 <title>Eimear Bell</title>
 <link href="css/thirdparty/bootstrap.min.css" rel="stylesheet">
 <link href="css/thirdparty/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
 
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
@@ -18,8 +19,21 @@
 
 </head>
 <body>
-	<div>
-		<div data-ng-view=""></div>
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse"
+		role="navigation">
+		<div id="main_navbar" class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<ul class="nav nav-pills">
+					<li class="active"><a href="/home">Home</a></li>
+					<li><a href="/profile">Profile</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1" data-ng-view=""></div>
 	</div>
 </body>
 </html>
